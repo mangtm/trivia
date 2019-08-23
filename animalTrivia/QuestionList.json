@@ -1,0 +1,18 @@
+[
+    {"question": "how old are you?",
+        "answers": ["12", "16", "45", "23"],
+        "correctAnswer": "16"}
+    ,
+    {"question": "how much do you weigh?",
+        "answers": ["120", "160", "80", "70"],
+        "correctAnswer": "80"}
+    ,
+    {"question": "how tall are you??",
+        "answers": ["1.65", "1.78", "1.43", "1.98"],
+        "correctAnswer": "1.78"}
+    ,
+    
+    {"question": "are you a male or female?",
+        "answers": ["Male", "Female"],
+        "correctAnswer": "Male"}
+]
