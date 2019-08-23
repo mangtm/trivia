@@ -10,9 +10,11 @@ import UIKit
 
 class QuestionViewController: UIViewController {
 
+    var questionList = [Question]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        print(questionList)
         // Do any additional setup after loading the view.
     }
     

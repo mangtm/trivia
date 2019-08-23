@@ -62,7 +62,6 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="typeLabel" destination="Hqy-Xm-us2" id="42P-m2-fj8"/>
-                                            <segue destination="Z6x-UQ-PYQ" kind="show" identifier="triviaScreenSegue" id="N00-No-urW"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -90,6 +89,7 @@
                     <navigationItem key="navigationItem" id="JR4-iD-JSC"/>
                     <connections>
                         <outlet property="animalTableView" destination="5qq-rz-DaR" id="U5n-az-9Oh"/>
+                        <segue destination="Z6x-UQ-PYQ" kind="show" identifier="triviaScreenSegue" id="xyA-oc-jrk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

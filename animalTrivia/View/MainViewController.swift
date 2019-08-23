@@ -12,6 +12,7 @@ class MainViewController: UIViewController {
 
     @IBOutlet weak var animalTableView: UITableView!
     var animalList = [Animal]()
+    var questionList = [String: [Question]]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +33,9 @@ class MainViewController: UIViewController {
         }
     }
     
+    // TODO: Create a seperate file to extract data from each json file and
+    // populate questionList = [AnimalName: [Question]]
+    
     func initializeQuestionList() {
 
         let decoder = JSONDecoder()
@@ -41,11 +45,17 @@ class MainViewController: UIViewController {
         let result = try! decoder.decode([Question].self, from: jsonData)
         
         for question in result {
-            
-            print(question.question)
-            print(question.answers)
-            print(question.correctAnswer)
+
+            if questionList["Cats"] == nil {
+               
+                questionList["Cats"] = [question]
+            }
+            else {
+                questionList["Cats"]?.append(question)
+            }
         }
+        
+        print(questionList)
     }
 }
 
@@ -70,5 +80,30 @@ extension MainViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 150.0
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        performSegue(withIdentifier: "triviaScreenSegue", sender: indexPath)
+    }
+}
+
+extension MainViewController {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "triviaScreenSegue" {
+            
+            if let indexPath = sender as? IndexPath {
+                
+                if let myCell = animalTableView.cellForRow(at: indexPath) as? MainTableViewCell {
+                    
+                    if let destination = segue.destination as? QuestionViewController {
+                        
+                        
+                        destination.questionList = questionList[myCell.typeLabel.text!]!
+                    }
+                }
+            }
+            
+        }
     }
 }
