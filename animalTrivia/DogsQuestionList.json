@@ -1,0 +1,31 @@
+[
+    {"question": "What breed is considered the “silent” or “barkless” dog?",
+        "answers": ["Welsh Corgi", "Basenji", "Papillion", "English Bulldog"],
+        "correctAnswer": "Basenji",
+        "explanation": "While many people believe that Basenji’s don’t bark, they can make noise. Basenji barking sounds more like a yodel than a bark."
+    }
+    ,
+    {"question": "Dogs with erect ears can hear better than dogs with droopy ears. ",
+        "answers": ["True", "False"],
+        "correctAnswer": "True",
+        "explanation": "Dogs also have twice as many muscles in their ears than humans."
+    }
+    ,
+    {"question": "What color can dogs NOT see?",
+        "answers": ["Black", "Blue", "Yellow", "Red"],
+        "correctAnswer": "Red",
+        "explanation": "Humans have three types of photoreceptors in their eyes that transmit signals about color to the brain, while dogs have two types of photoreceptors."
+    }
+    ,
+    {"question": "What is the most common health problem in dogs? ",
+        "answers": ["Obesity", "Broken bones", "Kidney stones", "Cancer"],
+        "correctAnswer": "Obesity",
+        "explanation": "56% of American dogs are overweight. Be sure to exercise and play with your pet often so they live a healthy, happy life."
+    }
+    ,
+    {"question": "How many different dog breeds are there?",
+        "answers": ["234", "400", "555", "1,231"],
+        "correctAnswer": "400",
+        "explanation": ""
+    }
+]

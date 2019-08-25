@@ -134,26 +134,38 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ubQ-nc-Qoq">
                                                         <rect key="frame" x="0.0" y="0.0" width="414" height="293.5"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wKC-HB-b2F">
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wKC-HB-b2F">
                                                                 <rect key="frame" x="0.0" y="0.0" width="207" height="293.5"/>
                                                                 <state key="normal" title="Button"/>
+                                                                <connections>
+                                                                    <action selector="answer1Pressed:" destination="Z6x-UQ-PYQ" eventType="touchUpInside" id="Ltk-8H-hI7"/>
+                                                                </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JhQ-tx-15x">
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JhQ-tx-15x">
                                                                 <rect key="frame" x="207" y="0.0" width="207" height="293.5"/>
                                                                 <state key="normal" title="Button"/>
+                                                                <connections>
+                                                                    <action selector="answer2Pressed:" destination="Z6x-UQ-PYQ" eventType="touchUpInside" id="0y3-hL-23s"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="tNv-0A-JKH">
                                                         <rect key="frame" x="0.0" y="293.5" width="414" height="293.5"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PbI-g0-L8o">
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PbI-g0-L8o">
                                                                 <rect key="frame" x="0.0" y="0.0" width="207" height="293.5"/>
                                                                 <state key="normal" title="Button"/>
+                                                                <connections>
+                                                                    <action selector="answer3Pressed:" destination="Z6x-UQ-PYQ" eventType="touchUpInside" id="fFT-cG-ptN"/>
+                                                                </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g9s-b2-x1x">
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g9s-b2-x1x">
                                                                 <rect key="frame" x="207" y="0.0" width="207" height="293.5"/>
                                                                 <state key="normal" title="Button"/>
+                                                                <connections>
+                                                                    <action selector="answer4Pressed:" destination="Z6x-UQ-PYQ" eventType="touchUpInside" id="khZ-y5-Agw"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
@@ -190,6 +202,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Le1-8q-4Uo"/>
                     </view>
+                    <connections>
+                        <outlet property="answer1Label" destination="wKC-HB-b2F" id="65i-li-DHp"/>
+                        <outlet property="answer2Label" destination="JhQ-tx-15x" id="XDr-oh-eHb"/>
+                        <outlet property="answer3Label" destination="PbI-g0-L8o" id="40A-rB-siD"/>
+                        <outlet property="answer4Label" destination="g9s-b2-x1x" id="U1w-J1-Rke"/>
+                        <outlet property="questionLabel" destination="x8j-ug-NF8" id="rL3-YE-xHT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hsJ-5Z-0K4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

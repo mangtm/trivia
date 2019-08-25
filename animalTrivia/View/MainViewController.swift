@@ -18,7 +18,9 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         
         initializeAnimalList()
-        initializeQuestionList()
+        // TODO: Move to prepare for segue? Maybe?
+        initializeQuestionListFor(animal: "Cats", fileName: "CatsQuestionList")
+        initializeQuestionListFor(animal: "Dogs", fileName: "DogsQuestionList")
         self.animalTableView.dataSource = self
         self.animalTableView.delegate = self
     }
@@ -36,26 +38,24 @@ class MainViewController: UIViewController {
     // TODO: Create a seperate file to extract data from each json file and
     // populate questionList = [AnimalName: [Question]]
     
-    func initializeQuestionList() {
+    func initializeQuestionListFor(animal: String, fileName: String) {
 
         let decoder = JSONDecoder()
-        let jsonFilePath = Bundle.main.path(forResource: "QuestionList", ofType: "json")
+        let jsonFilePath = Bundle.main.path(forResource: fileName, ofType: "json")
         let jsonData = try! Data(contentsOf: URL(fileURLWithPath: jsonFilePath!))
         
         let result = try! decoder.decode([Question].self, from: jsonData)
         
         for question in result {
 
-            if questionList["Cats"] == nil {
+            if questionList[animal] == nil {
                
-                questionList["Cats"] = [question]
+                questionList[animal] = [question]
             }
             else {
-                questionList["Cats"]?.append(question)
+                questionList[animal]?.append(question)
             }
         }
-        
-        print(questionList)
     }
 }
 
@@ -97,7 +97,6 @@ extension MainViewController {
                 if let myCell = animalTableView.cellForRow(at: indexPath) as? MainTableViewCell {
                     
                     if let destination = segue.destination as? QuestionViewController {
-                        
                         
                         destination.questionList = questionList[myCell.typeLabel.text!]!
                     }

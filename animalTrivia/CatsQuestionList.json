@@ -1,0 +1,27 @@
+[
+    {"question": "What is the largest domestic cat breed?",
+        "answers": ["American Bobtail", "Siberian", "Norwegian Forest Cat", "Maine Coon"],
+        "correctAnswer": "Maine Coon",
+        "explanation": "Maine Coon cats are the largest recognized cat breed in the world with females weighing up to 15 pounds and males weighing up to 25 pounds."
+    }
+    ,
+    {"question": "What breed is a cross between a Persian and Siamese?",
+        "answers": ["Persamese", "Himalayan", "Manx", "Ragdoll"],
+        "correctAnswer": "Himalayan",
+        "explanation": "Himalayan cats have beautiful long coats that can vary in color from chocolate to fawn to cinnamon."
+    }
+    ,
+    {"question": "What medical procedure prevents female cats from having unwanted litters?",
+        "answers": ["Spaying", "Neutralizing", "Clipping", "Cleansing"],
+        "correctAnswer": "Spaying",
+        "explanation": "One female can have up to three litters in one year with an average litter size of four kittens and an average lifespan of 12 years, resulting in more than 140 kittens in her lifetime!"
+    }
+    ,
+    
+    {"question": "Why should pet cats be kept indoors always?",
+        "answers": ["They can be harmed by cars or predators",
+        "They can contract illnesses from wild animals or other cats", "They hunt and kill fragile bird species", "They can become lost from their owner", "All of the above"],
+        "correctAnswer": "All of the above",
+        "explanation": "Cats that live indoors have an average lifespan of 14 years. Cats that are allowed to go outside have an average lifespan of 7 years. Protect your pet by keeping them indoors!"
+    }
+]

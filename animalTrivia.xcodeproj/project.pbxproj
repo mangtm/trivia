@@ -16,8 +16,9 @@
 		A7C3B6BC230E0C66001ABE56 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C3B6BB230E0C66001ABE56 /* MainTableViewCell.swift */; };
 		A7C3B6BE230E0F4F001ABE56 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C3B6BD230E0F4F001ABE56 /* Animal.swift */; };
 		A7C3B6C0230EF681001ABE56 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C3B6BF230EF681001ABE56 /* Question.swift */; };
-		A7C3B6C2230EF992001ABE56 /* QuestionList.json in Resources */ = {isa = PBXBuildFile; fileRef = A7C3B6C1230EF991001ABE56 /* QuestionList.json */; };
+		A7C3B6C2230EF992001ABE56 /* CatsQuestionList.json in Resources */ = {isa = PBXBuildFile; fileRef = A7C3B6C1230EF991001ABE56 /* CatsQuestionList.json */; };
 		A7C3B6C4230F7DF5001ABE56 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C3B6C3230F7DF5001ABE56 /* QuestionViewController.swift */; };
+		A7C3B6C62310A23B001ABE56 /* DogsQuestionList.json in Resources */ = {isa = PBXBuildFile; fileRef = A7C3B6C52310A23B001ABE56 /* DogsQuestionList.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,8 +45,9 @@
 		A7C3B6BB230E0C66001ABE56 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
 		A7C3B6BD230E0F4F001ABE56 /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
 		A7C3B6BF230EF681001ABE56 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
-		A7C3B6C1230EF991001ABE56 /* QuestionList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = QuestionList.json; sourceTree = "<group>"; };
+		A7C3B6C1230EF991001ABE56 /* CatsQuestionList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CatsQuestionList.json; sourceTree = "<group>"; };
 		A7C3B6C3230F7DF5001ABE56 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		A7C3B6C52310A23B001ABE56 /* DogsQuestionList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DogsQuestionList.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +96,8 @@
 				A7C3B69A230E0802001ABE56 /* Main.storyboard */,
 				A7C3B69D230E0803001ABE56 /* Assets.xcassets */,
 				A7C3B69F230E0803001ABE56 /* LaunchScreen.storyboard */,
-				A7C3B6C1230EF991001ABE56 /* QuestionList.json */,
+				A7C3B6C1230EF991001ABE56 /* CatsQuestionList.json */,
+				A7C3B6C52310A23B001ABE56 /* DogsQuestionList.json */,
 				A7C3B6A2230E0803001ABE56 /* Info.plist */,
 			);
 			path = animalTrivia;
@@ -217,7 +220,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7C3B6A1230E0803001ABE56 /* LaunchScreen.storyboard in Resources */,
-				A7C3B6C2230EF992001ABE56 /* QuestionList.json in Resources */,
+				A7C3B6C62310A23B001ABE56 /* DogsQuestionList.json in Resources */,
+				A7C3B6C2230EF992001ABE56 /* CatsQuestionList.json in Resources */,
 				A7C3B69E230E0803001ABE56 /* Assets.xcassets in Resources */,
 				A7C3B69C230E0802001ABE56 /* Main.storyboard in Resources */,
 			);
