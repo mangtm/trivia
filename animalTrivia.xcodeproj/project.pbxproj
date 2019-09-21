@@ -19,6 +19,7 @@
 		A7C3B6C2230EF992001ABE56 /* CatsQuestionList.json in Resources */ = {isa = PBXBuildFile; fileRef = A7C3B6C1230EF991001ABE56 /* CatsQuestionList.json */; };
 		A7C3B6C4230F7DF5001ABE56 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C3B6C3230F7DF5001ABE56 /* QuestionViewController.swift */; };
 		A7C3B6C62310A23B001ABE56 /* DogsQuestionList.json in Resources */ = {isa = PBXBuildFile; fileRef = A7C3B6C52310A23B001ABE56 /* DogsQuestionList.json */; };
+		A7C3B6C8231366F1001ABE56 /* AnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C3B6C7231366F1001ABE56 /* AnswerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		A7C3B6C1230EF991001ABE56 /* CatsQuestionList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CatsQuestionList.json; sourceTree = "<group>"; };
 		A7C3B6C3230F7DF5001ABE56 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		A7C3B6C52310A23B001ABE56 /* DogsQuestionList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DogsQuestionList.json; sourceTree = "<group>"; };
+		A7C3B6C7231366F1001ABE56 /* AnswerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 				A7C3B6B9230E0BB4001ABE56 /* MainViewController.swift */,
 				A7C3B6BB230E0C66001ABE56 /* MainTableViewCell.swift */,
 				A7C3B6C3230F7DF5001ABE56 /* QuestionViewController.swift */,
+				A7C3B6C7231366F1001ABE56 /* AnswerViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -242,6 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7C3B6C0230EF681001ABE56 /* Question.swift in Sources */,
+				A7C3B6C8231366F1001ABE56 /* AnswerViewController.swift in Sources */,
 				A7C3B697230E0802001ABE56 /* AppDelegate.swift in Sources */,
 				A7C3B6C4230F7DF5001ABE56 /* QuestionViewController.swift in Sources */,
 				A7C3B6BE230E0F4F001ABE56 /* Animal.swift in Sources */,

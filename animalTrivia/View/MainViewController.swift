@@ -18,7 +18,7 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         
         initializeAnimalList()
-        // TODO: Move to prepare for segue? Maybe?
+        // TODO: Do the same for Rabbits and Wild Life
         initializeQuestionListFor(animal: "Cats", fileName: "CatsQuestionList")
         initializeQuestionListFor(animal: "Dogs", fileName: "DogsQuestionList")
         self.animalTableView.dataSource = self
@@ -34,9 +34,6 @@ class MainViewController: UIViewController {
             self.animalList.append(Animal(name: animal, image: URL(fileURLWithPath: "some_url")))
         }
     }
-    
-    // TODO: Create a seperate file to extract data from each json file and
-    // populate questionList = [AnimalName: [Question]]
     
     func initializeQuestionListFor(animal: String, fileName: String) {
 
@@ -59,6 +56,7 @@ class MainViewController: UIViewController {
     }
 }
 
+// MARK - UITableViewDataSource
 extension MainViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -75,7 +73,7 @@ extension MainViewController: UITableViewDataSource {
         return self.animalList.count
     }
 }
-
+// MARK - UITableViewDelegate
 extension MainViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
