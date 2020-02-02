@@ -1,27 +1,65 @@
 [
-    {"question": "What is the largest domestic cat breed?",
+    {"question": "1) What is the largest domestic cat breed?",
         "answers": ["American Bobtail", "Siberian", "Norwegian Forest Cat", "Maine Coon"],
         "correctAnswer": "Maine Coon",
-        "explanation": "Maine Coon cats are the largest recognized cat breed in the world with females weighing up to 15 pounds and males weighing up to 25 pounds."
+        "explanation": "Answer: Maine Coon. Maine Coon cats are the largest recognized cat breed in the world with females weighing up to 15 pounds and males weighing up to 25 pounds."
     }
     ,
-    {"question": "What breed is a cross between a Persian and Siamese?",
+    {"question": "2) What breed is a cross between a Persian and Siamese?",
         "answers": ["Persamese", "Himalayan", "Manx", "Ragdoll"],
         "correctAnswer": "Himalayan",
-        "explanation": "Himalayan cats have beautiful long coats that can vary in color from chocolate to fawn to cinnamon."
+        "explanation": "Answer: Himalayan. Himalayan cats have beautiful long coats that can vary in color from chocolate to fawn to cinnamon."
     }
     ,
-    {"question": "What medical procedure prevents female cats from having unwanted litters?",
+    {"question": "3) What medical procedure prevents female cats from having unwanted litters?",
         "answers": ["Spaying", "Neutralizing", "Clipping", "Cleansing"],
         "correctAnswer": "Spaying",
-        "explanation": "One female can have up to three litters in one year with an average litter size of four kittens and an average lifespan of 12 years, resulting in more than 140 kittens in her lifetime!"
+        "explanation": "Answer: Spaying. One female can have up to three litters in one year with an average litter size of four kittens and an average lifespan of 12 years, resulting in more than 140 kittens in her lifetime!"
     }
     ,
     
-    {"question": "Why should pet cats be kept indoors always?",
+    {"question": "4) Why should pet cats be kept indoors always?",
         "answers": ["They can be harmed by cars or predators",
         "They can contract illnesses from wild animals or other cats", "They hunt and kill fragile bird species", "They can become lost from their owner", "All of the above"],
         "correctAnswer": "All of the above",
-        "explanation": "Cats that live indoors have an average lifespan of 14 years. Cats that are allowed to go outside have an average lifespan of 7 years. Protect your pet by keeping them indoors!"
+        "explanation": "Answer: All of the above. Cats that live indoors have an average lifespan of 14 years. Cats that are allowed to go outside have an average lifespan of 7 years. Protect your pet by keeping them indoors!"
     }
+    ,
+    {"question": "5) Cats are independent and self-sufficient, making them good pets for people who don’t want a lot of responsibility in a pet.",
+        "answers": ["True", "False"],
+        "correctAnswer": "False",
+        "explanation": "Answer: False. All pets are a big responsibility and need care. Cats are wonderful pets, be sure to spend lots of time giving your cat love"
+    }
+    ,
+    {"question": "6) What does the word tabby describe?",
+           "answers": ["Age", "Breed", "Fur pattern", "Size"],
+           "correctAnswer": "Fur pattern",
+           "explanation": "Answer: Fur pattern. Tabby cats are commonly short haired and have mostly stripes. They come in all colors."
+       }
+       ,
+       {"question": "7) Calico describes a multicolored fur pattern that has a genetic tendency to be male.",
+           "answers": ["True", "False"],
+           "correctAnswer": "False",
+           "explanation": "Answer: False. Most calico cats are actually female."
+       }
+       ,
+       {"question": "8) What is a group of cats called?",
+           "answers": ["Herd", "Stampede", "Clowder", "Cloud"],
+           "correctAnswer": "Clowder",
+           "explanation": "Answer: Clowder. While a group of cats is called a clowder, a litter of kittens is called a kindle."
+       }
+       ,
+       
+       {"question": "9) The average cat spends about what percent of its life asleep?",
+           "answers": ["40%","50%", "60%", "70%"],
+           "correctAnswer": "70%",
+           "explanation": "Answer: 70%. They sure have mastered the term “cat nap!"
+       }
+       ,
+       {"question": "10) Which form of communication do cats use solely for humans?",
+           "answers": ["Meow", "Hiss", "Spit", "Purr"],
+           "correctAnswer": "False",
+           "explanation": "Answer: Meow. Cat’s meow to communicate only with humans; they don't meow at each other."
+       }
+       
 ]
