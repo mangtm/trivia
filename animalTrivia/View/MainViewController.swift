@@ -13,14 +13,21 @@ class MainViewController: UIViewController {
     @IBOutlet weak var animalTableView: UITableView!
     var animalList = [Animal]()
     var questionList = [String: [Question]]()
+
+    // **********************************
+    var animalTypes = ["      Dogs", "      Cats", "      Rabbits", "      Wild Life"]
+    var animalImages:[UIImage] = [ #imageLiteral(resourceName: "Dog_square"), #imageLiteral(resourceName: "Cats_Square"), #imageLiteral(resourceName: "Rabbit-square"), #imageLiteral(resourceName: "LionSquare")]
+    //**********************************
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        quizScore = 0;
         initializeAnimalList()
         // TODO: Do the same for Rabbits and Wild Life
-        initializeQuestionListFor(animal: "Cats", fileName: "CatsQuestionList")
-        initializeQuestionListFor(animal: "Dogs", fileName: "DogsQuestionList")
+        initializeQuestionListFor(animal: "      Cats", fileName: "CatsQuestionList")
+        initializeQuestionListFor(animal: "      Dogs", fileName: "DogsQuestionList")
+        initializeQuestionListFor(animal: "      Rabbits", fileName: "RabbitsQuestionList")
+        initializeQuestionListFor(animal: "      Wild Life", fileName: "WildLifeQuestionList")
         self.animalTableView.dataSource = self
         self.animalTableView.delegate = self
     }
@@ -28,8 +35,6 @@ class MainViewController: UIViewController {
     func initializeAnimalList() {
         
         // TODO: Store name and image_url in a file and populate animalList from the file
-        let animalTypes = ["Dogs", "Cats", "Rabbits", "Wild Life"]
-        
         for animal in animalTypes {
             self.animalList.append(Animal(name: animal, image: URL(fileURLWithPath: "some_url")))
         }
@@ -64,6 +69,10 @@ extension MainViewController: UITableViewDataSource {
             return UITableViewCell(frame: .zero)
         }
         
+        // GKG
+       // cell.textLabel!.text = animalTypes[indexPath.row]
+        cell.imageView?.image = animalImages[indexPath.row]
+                  
         cell.backgroundColor = UIColor.yellow
         cell.configureCellWithAnimal(animal: self.animalList[indexPath.row])
         return cell
@@ -95,8 +104,8 @@ extension MainViewController {
                 if let myCell = animalTableView.cellForRow(at: indexPath) as? MainTableViewCell {
                     
                     if let destination = segue.destination as? QuestionViewController {
-                        
                         destination.questionList = questionList[myCell.typeLabel.text!]!
+                        print(destination.questionList)
                     }
                 }
             }
