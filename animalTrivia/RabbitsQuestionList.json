@@ -1,0 +1,61 @@
+[
+    {"question": "1) What are baby rabbits called?",
+        "answers": ["Pups", "Pinkies", "Kits", "Cubs"],
+        "correctAnswer": "Kits",
+        "explanation": "Answer: Kits. Baby rabbits are born blind, deaf, and hairless. They can open their eyes and hear by ten days of age. A mother rabbit can have as many as 14 kits per litter."
+    }
+    ,
+    {"question": "2) Rabbits eat their own poop.",
+        "answers": ["True", "False"],
+        "correctAnswer": "True",
+        "explanation": "Answer: True. Rabbits eat their own poops, called cecotropes, to digest a second time accessing important nutrients and vitamins."
+    }
+    ,
+    {"question": "3) What is a wild rabbit’s home called?",
+        "answers": ["Mound", "Den", "Haven", "Burrow"],
+        "correctAnswer": "Burrow",
+        "explanation": "Answer: Burrow. Wild rabbits live underground in burrows. Burrows always have more than one entrance and exit. It’s important to provide your pet rabbit with a hiding place of their own so they can feel secure."
+    }
+    ,
+    {"question": "4) Rabbits are __________?",
+        "answers": ["Carnivores", "Herbivores", "Omnivores", "None of the above"],
+        "correctAnswer": "Herbivores",
+        "explanation": "Answer: Herbivores. Rabbits eat only vegetation and plants. Domestic rabbits need a diet of primarily hay. They should eat as much hay as the size of their body every single day!"
+    }
+    ,
+    {"question": "5) How long do pet rabbits live?",
+        "answers": ["2-3 years", "4-5 years", "6-7 years", "8-10 years"],
+        "correctAnswer": "8-10 years",
+        "explanation": "Answer: 8-10 years. Pet rabbits live a long time if they’re provided with a healthy diet, lots of exercise and plenty of love. Smaller breeds tend to have longer lifespans and larger breeds tend to live fewer years."
+    }
+    ,
+    {"question": "6) What is the best bedding to use for your pet rabbit?.",
+        "answers": ["A wool blanket", "Recycled paper bedding", "Hay", "All of the above"],
+        "correctAnswer": "All of the above",
+        "explanation": "Answer: All of the above. Rabbits appreciate a soft cozy surface to live on. Be sure to clean your rabbit’s litter box daily and their bedding weekly. Never use a wire bottom cage or wood shavings as they can cause health problems in your pet."
+    }
+    ,
+    {"question": "7) What is unusual about the incisor teeth of rabbits?",
+        "answers": ["They don’t have any", "They never get cavities", "They grow continually", "They can’t bite"],
+        "correctAnswer": "They grow continually",
+        "explanation": "Answer: They grow continually. Rabbits, like all small furry mammals, have teeth that never stop growing. Be sure to provide your pet with items like cardboard, hay and untreated wood to gnaw on to keep their teeth at an appropriate length."
+    }
+    ,
+    {"question": "8) Should pet rabbits live indoors or outdoors?",
+        "answers": ["Indoors", "Outdoors"],
+        "correctAnswer": "Indoors",
+        "explanation": "Answer: Indoors. Rabbits are preyed upon by many different species. They can die from fear if they see a predator. Keep your rabbit safe inside where it can receive lots of love and attention from your family."
+    }
+    ,
+    {"question": "9) Which rabbit breed has long fur that can be used to make yarn or clothing?",
+        "answers": ["American", "Angora", "Fuzzy Lop", "Rex"],
+        "correctAnswer": "Angora",
+        "explanation": "Answer: Angora. Angora rabbits have beautiful, soft, long fur. If you own an Angora as a pet, be sure to groom it every single day so its hair doesn’t get mats and tangles."
+    }
+    ,
+    {"question": "10) What foods can make a rabbit sick if offered in excess?",
+        "answers": ["Carrots", "Swiss Chard", "Dandelion greens", "Parsley"],
+        "correctAnswer": "Carrots",
+        "explanation": "Answer: Carrots. Carrots have lots of sugar and can make your rabbit sick if it eats too much. A rabbit should have no more than half of a baby carrot each day. Use carrots as treats and rewards only."
+    }
+]

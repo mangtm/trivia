@@ -1,0 +1,65 @@
+[
+    {"question": "1) What is a squirrel nest called?",
+        "answers": ["Dam", "Drey", "Dugout", "Den"],
+        "correctAnswer": "Drey",
+        "explanation": "Answer: Drey. Squirrels built dreys out of bark, twigs, and leaves at least 20 feet high in a tree. They have 3-5 young ones in early spring or late summer. Be sure to trim your trees in winter when there isn’t a risk of cutting down a squirrel nest."
+    }
+    ,
+    {"question": "2) What do you call a baby bird that is hopping around on the ground learning how to fly?",
+        "answers": ["Hatchling", "Nestling", "Fledgling", "Chickling"],
+        "correctAnswer": "Fledgling",
+        "explanation": "Answer: Fledgling. All birds enter a vulnerable stage when they’re learning how to fly. The parents are still feeding the baby bird but it can easily be injured or killed during the fledgling stage. Fledglings do not need your help but be sure to keep dogs and cats away."
+    }
+    ,
+    {"question": "3) What is a skunk’s weakest sense?",
+        "answers": ["Smell", "Hearing", "Taste", "Sight"],
+        "correctAnswer": "Sight",
+        "explanation": "Answer: Sight. If you see a skunk keep in mind that it can’t see you very well. To avoid being sprayed, talk softly to it as you slowly back away so it can hear you retreating."
+    }
+    ,
+    
+    {"question": "4) Why do raccoons appear to “wash” their food when water is available?",
+        "answers": ["To make sure it’s clean before they eat it",
+        "To identify edible pieces", "To cool it off", "o rinse away bad tastes"],
+        "correctAnswer": "To identify edible pieces",
+        "explanation": "Answer: To identify edible pieces. Raccoons have great dexterity and use their paws to analyze their food before they eat it. They’ve also been known to untie knots and open latched gates with their paws."
+    }
+    ,
+    
+    {"question": "5) What is the only living marsupial (raises young in a pouch) native North America?",
+        "answers": ["Kangaroo", "Tasmanian Devil", "Sugar Glider", "Virginia Opossum"],
+        "correctAnswer": "Virginia Opossum",
+        "explanation": "Answer: Virginia Opossum. Opossums live only about two years, continue to grow (slowly) their whole lives, are nocturnal and can eat up to 1,000 ticks in one night!"
+    }
+    ,
+    {"question": "6) If you encounter a coyote what should you do?",
+        "answers": ["Walk away", "Run away", "Approach it slowly", "Offer it food if it looks hungry"],
+        "correctAnswer": "Walk away",
+        "explanation": "Answer: Walk away. Never approach or feed a wild coyote. If you see a coyote while walking your dog, leash your dog and walk away calmly. If a coyote follows you, it’s likely “escorting” you away from its territory or den."
+    }
+    ,
+    {"question": "7) Birds of prey such as owls and hawks are also commonly known as _______?",
+        "answers": ["Killers", "Talons", "Raptors", "Avians"],
+        "correctAnswer": "Raptors",
+        "explanation": "Answer: Raptors. Birds of prey eat primarily rodents and help to manage populations of mice, rats and other small mammals. However, birds of prey don’t know the difference between our pets and their prey. Be sure to protect your cats and small dogs by keeping them indoors with you."
+    }
+    ,
+    
+    {"question": "8) What do you call a baby deer?",
+        "answers": ["Calf", "Fawn", "Doe", "Buck"],
+        "correctAnswer": "Fawn",
+        "explanation": "Answer: Fawns. Fawns are born with white spots that help them blend into grasses and sun dapples. If you find a fawn all alone do not touch it or try to help it. The mother deer leaves her baby temporarily while she forages for food. If you have reason to believe the mother deer was injured or killed call local Fish and Wildlife or Animal Control to collect the fawn."
+    }
+    ,
+      {"question": "9) Which is true of bats?",
+          "answers": ["Bats are the only flying mammal", "Bats are the smallest known mammal", "Bats can live longer than 30 years", "All of the above"],
+          "correctAnswer": "All of the above",
+          "explanation": "Answer: All of the above. Bats are fascinating animals that are valuable to plants and ecosystems for their roles in reforestation and pollination."
+      }
+      ,
+      {"question": "10) What percentage of marine birds are estimated to have plastic debris in their stomach?",
+          "answers": ["10%", "35%", "59%", "90%"],
+          "correctAnswer": "90%",
+          "explanation": "Answer: 90%. It’s a sad fact that most marine birds consume plastic particles that become stuck in their stomachs. We can all do our part to help marine birds by picking up litter and reducing our use of plastics."
+      }
+]
