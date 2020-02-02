@@ -14,6 +14,12 @@ protocol QuestionViewDelegate: class {
 
 class AnswerViewController: UIViewController {
     
+    // Added scoreLabel to track correct responses on the Navigation Bar
+    // TODO: Update Score to reflect current value and then reset to zero
+    // after every quiz.
+    
+    @IBOutlet var scoreLabel: UILabel!
+    
     @IBOutlet weak var correctnessLabel: UILabel!
     @IBOutlet weak var explanationLabel: UILabel!
     
@@ -35,11 +41,18 @@ class AnswerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+    
+    
+    
+    
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         correctnessLabel.text = answerIsCorrect
+        if answerIsCorrect == "Correct" {
+            scoreLabel.text = String(quizScore)
+        }
         explanationLabel.text = explanation
         
     }
