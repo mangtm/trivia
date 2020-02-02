@@ -7,12 +7,15 @@
 //
 
 import UIKit
+// Added
+var quizScore = 0;
 
 class QuestionViewController: UIViewController {
 
     var questionList = [Question]()
     var currentQuestionIndex = 0
     var answerVC: AnswerViewController?
+  
     
     @IBOutlet weak var questionLabel: UILabel!
     
@@ -26,7 +29,10 @@ class QuestionViewController: UIViewController {
         
         if isSelectedAnswerCorrect(selectedAnswer: (sender.titleLabel?.text)!, correctAnswer: questionList[currentQuestionIndex-1].correctAnswer) {
             answer1Label.backgroundColor = UIColor.green
+        
             self.presentViewControllerWith(Answer: "Correct!")
+            quizScore += 1
+        
         }
         else {
             answer1Label.backgroundColor = UIColor.red
@@ -38,7 +44,6 @@ class QuestionViewController: UIViewController {
     func presentViewControllerWith(Answer: String) {
         
         guard let answerViewController = answerVC else { return }
-        
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
             
             answerViewController.answerIsCorrect = Answer
@@ -55,6 +60,7 @@ class QuestionViewController: UIViewController {
         if isSelectedAnswerCorrect(selectedAnswer: (sender.titleLabel?.text)!, correctAnswer: questionList[currentQuestionIndex-1].correctAnswer) {
             answer2Label.backgroundColor = UIColor.green
             self.presentViewControllerWith(Answer: "Correct!")
+            quizScore += 1
         }
         else {
             answer2Label.backgroundColor = UIColor.red
@@ -66,6 +72,8 @@ class QuestionViewController: UIViewController {
         if isSelectedAnswerCorrect(selectedAnswer: (sender.titleLabel?.text)!, correctAnswer: questionList[currentQuestionIndex-1].correctAnswer) {
             answer3Label.backgroundColor = UIColor.green
             self.presentViewControllerWith(Answer: "Correct!")
+            quizScore += 1
+        
         }
         else {
             answer3Label.backgroundColor = UIColor.red
@@ -77,6 +85,9 @@ class QuestionViewController: UIViewController {
         if isSelectedAnswerCorrect(selectedAnswer: (sender.titleLabel?.text)!, correctAnswer: questionList[currentQuestionIndex-1].correctAnswer) {
             answer4Label.backgroundColor = UIColor.green
             self.presentViewControllerWith(Answer: "Correct!")
+            quizScore += 1
+        
+        
         }
         else {
             answer4Label.backgroundColor = UIColor.red
@@ -131,12 +142,13 @@ class QuestionViewController: UIViewController {
 // MARK - QuestionViewDelegate methods
 extension QuestionViewController: QuestionViewDelegate {
     
-    // Clear all the button background colors and display the next question from question list
+    // Clear all the button background colors and display the next question from
+    // question list
     func prepareNextQuestion() {
         
         self.answer1Label.backgroundColor = UIColor.clear
-        self.answer2Label.backgroundColor = UIColor.clear
-        self.answer3Label.backgroundColor = UIColor.clear
+        self.answer2Label.backgroundColor = UIColor.systemOrange
+        self.answer3Label.backgroundColor = UIColor.systemOrange
         self.answer4Label.backgroundColor = UIColor.clear
         updateTextsForNextQuestion()
     }
