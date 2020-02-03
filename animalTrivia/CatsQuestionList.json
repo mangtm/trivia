@@ -20,7 +20,7 @@
     
     {"question": "4) Why should pet cats be kept indoors always?",
         "answers": ["They can be harmed by cars or predators",
-        "They can contract illnesses from wild animals or other cats", "They hunt and kill fragile bird species", "They can become lost from their owner", "All of the above"],
+        "They can contract illnesses from wild animals or other cats", "They can become lost from their owner", "All of the above"],
         "correctAnswer": "All of the above",
         "explanation": "Answer: All of the above. Cats that live indoors have an average lifespan of 14 years. Cats that are allowed to go outside have an average lifespan of 7 years. Protect your pet by keeping them indoors!"
     }
