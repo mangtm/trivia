@@ -58,7 +58,7 @@
        ,
        {"question": "10) Which form of communication do cats use solely for humans?",
            "answers": ["Meow", "Hiss", "Spit", "Purr"],
-           "correctAnswer": "False",
+           "correctAnswer": "Meow",
            "explanation": "Answer: Meow. Cat’s meow to communicate only with humans; they don't meow at each other."
        }
        
