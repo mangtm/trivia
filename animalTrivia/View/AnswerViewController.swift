@@ -20,6 +20,7 @@ class AnswerViewController: UIViewController {
     
     @IBOutlet var scoreLabel: UILabel!
     
+    @IBOutlet var answerScreenScore: UILabel!
     @IBOutlet weak var correctnessLabel: UILabel!
     @IBOutlet weak var explanationLabel: UILabel!
     
@@ -49,6 +50,7 @@ class AnswerViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
+        answerScreenScore.text = String(quizScore)
         correctnessLabel.text = answerIsCorrect
         if answerIsCorrect == "Correct" {
             scoreLabel.text = String(quizScore)

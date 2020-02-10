@@ -21,9 +21,7 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        quizScore = 0;
         initializeAnimalList()
-        // TODO: Do the same for Rabbits and Wild Life
         initializeQuestionListFor(animal: "      Cats", fileName: "CatsQuestionList")
         initializeQuestionListFor(animal: "      Dogs", fileName: "DogsQuestionList")
         initializeQuestionListFor(animal: "      Rabbits", fileName: "RabbitsQuestionList")

@@ -21,6 +21,8 @@ class MainTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+        // Also, Reset quizScore to zero for the next quiz round
+        quizScore = 0
     }
 
     func configureCellWithAnimal(animal: Animal) {

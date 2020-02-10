@@ -7,7 +7,7 @@
 //
 
 import UIKit
-// Added
+// quizScore keeps track of all the correct answers for every quiz
 var quizScore = 0;
 
 class QuestionViewController: UIViewController {
@@ -16,8 +16,10 @@ class QuestionViewController: UIViewController {
     var currentQuestionIndex = 0
     var answerVC: AnswerViewController?
   
+    @IBOutlet var questionScreenScore: UILabel!
     
     @IBOutlet weak var questionLabel: UILabel!
+    
     
     @IBOutlet weak var answer1Label: UIButton!
     @IBOutlet weak var answer2Label: UIButton!
@@ -32,6 +34,7 @@ class QuestionViewController: UIViewController {
         
             self.presentViewControllerWith(Answer: "Correct!")
             quizScore += 1
+            questionScreenScore.text = String(quizScore)
         
         }
         else {
@@ -61,6 +64,7 @@ class QuestionViewController: UIViewController {
             answer2Label.backgroundColor = UIColor.green
             self.presentViewControllerWith(Answer: "Correct!")
             quizScore += 1
+            questionScreenScore.text = String(quizScore)
         }
         else {
             answer2Label.backgroundColor = UIColor.red
@@ -73,6 +77,7 @@ class QuestionViewController: UIViewController {
             answer3Label.backgroundColor = UIColor.green
             self.presentViewControllerWith(Answer: "Correct!")
             quizScore += 1
+            questionScreenScore.text = String(quizScore)
         
         }
         else {
@@ -86,7 +91,7 @@ class QuestionViewController: UIViewController {
             answer4Label.backgroundColor = UIColor.green
             self.presentViewControllerWith(Answer: "Correct!")
             quizScore += 1
-        
+            questionScreenScore.text = String(quizScore)
         
         }
         else {
